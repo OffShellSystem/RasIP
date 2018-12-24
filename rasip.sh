@@ -1,0 +1,144 @@
+#!/bin/bash
+echo "                                                               "
+echo "                                                               "
+echo -e "\e[0;32m       00101  11010  01110  00110   11  01  00110  01    00\e[0m"
+echo -e "\e[0;32m       01 10  11     00     01      10  00  00     10    11\e[0m"
+echo -e "\e[0;32m       00 11  01101  11011  01101   100111  01010  00    10\e[0m"
+echo -e "\e[0;32m       01 00  11     10        10   11  01  01     11    00\e[0m"
+echo -e "\e[0;32m       00110  01     10     11011   10  01  11100  00110 10100\e[0m"
+echo "       ........................................................"
+echo "       ........................................................"
+echo "       <<<<<<<<<<<<<<<<<<<<.............>>>>>>>>>>>>>>>>>>>>>>>"
+echo "                                                               "
+echo -e "\e[1;37m       <·OffShell System Underground. Script bash for shell·>\e[0m"
+echo "                                                               "
+echo "                                                               "
+
+echo -e "\e[1;37m       Bienvenido al sistema de automatización OffShell System.\e[0m"
+echo "                            <<<···>>>"
+echo "                                                              "
+echo "          "
+echo "          "
+echo "          "
+echo "-----------------------------------------------------------"
+			echo -e "\e[0;36m Programa registrado con licencia GPL [Copyleft] \e[0m"
+			echo "-----------------------------------------------------------"
+			echo ""
+			echo -e "\e[0;36m           >>>OFFSHELL SYSTEM © \e[0m"
+			echo ""
+			echo "                                                    -Feel the system-"
+			echo "                                                         <<<*>>>"
+			echo "                                                           <*>"
+			echo "                                                            -"
+			echo ""
+echo "       Presiona cualquier tecla para continuar..."
+read foo
+clear
+
+echo -e "\e[1;37m       <<<OFFSHELL SYSTEM UNDERGROUND>>>\e[0m"
+echo ""
+echo "       -- POR FAVOR, NECESITAMOS QUE ESPECIFIQUES UNA IP|HOST|DOMINIO --"
+echo "                       -- NECESARIA PARA CONTINUAR --"
+echo ""
+echo -e "\e[0;32m 	 --> INTRODUCE LA IP O DOMINIO EN EL SISTEMA: \e[0m"
+read var1
+echo "                               >IP GUARDADA"
+echo "                               >ACCEDIENDO AL SYSTEMA"
+echo "                                      <<< >>>"
+echo "                                       << >>"
+echo "                                        < >"
+echo "                     Presiona cualquier tecla para continuar..."
+read foo
+clear
+echo
+while :
+do
+	echo "    ***"
+	echo "     ***"
+	echo "      ***"
+	echo " FIN DEL INFORME... SUBE PARA LEER EL INFORME COMPLETO..."
+	echo " REGRESANDO AL MENU..."
+	echo "         ***"
+	echo "          ***"
+	echo "           ***"
+	echo " --------------------------------------------"
+	echo " ------------------------------------------------------------------"
+	echo " --------------------------------------------------------------------------------------------------------------"
+	echo "                              ·"
+	echo "                             ···"
+	echo "                            · * ·"
+	echo "                           · <·> ·"
+	echo "                          ·· ··· ··"
+	echo "                         ·· ····· ··"
+	echo "  <·PROGRAMA DE ANÁLISIS DE TRANSMISIONES CLIENTE-SERVIDOR·>"
+	echo "        <·RASTREO DE GEOLOCALIZACIÓN Y ENRUTAMIENTO·>"
+	echo ""
+	echo ""
+	echo "    *ESTAS SON LAS OPCIONES:"
+	echo " "
+	echo "        1. >INSTALAR [[ RECOMENDADO COMO PRIMER PASO]]"
+	echo "            >>ACTUALIZA EL PROGRAMA ANTES DE EMPEZAR"
+	echo "                  ··························"
+	echo "      "
+	echo "        2. >ANALIZAR LOS PUNTOS DE ACCESO O SERVIDORES DE LA CONEXIÓN."
+	echo "             MAPA DE TRANSMISION DE DATOS CLIENTE-SERVIDOR."
+	echo "       "
+	echo "        3. >GEOLOCALIZAR COORDENADAS DE LA IP Y LOS DATOS DE DIRECCIONES."
+	echo "  "
+	echo "        4. >EXTRAER INFORMACIÓN DE LA DIRECCIÓN IP | DOMINIO."
+	echo " "
+	echo "        5. >VER CÓDIGO HTML DE LA IP|DOMINIO EN PANTALLA."
+	echo "  "
+	echo "        6. >INTRODUCIR UNA NUEVA IP EN EL PROGRAMA."
+	echo " "
+	echo "        7. >SALIR DEL PROGRAMA."
+	echo "                         · · · · ··  "
+	echo "                          ·      ·  "
+	echo "                           ·    ·  "
+	echo "                            ·  ·    "
+	echo "                             ··      "
+	echo "      *ESCOGE UNA DE LAS OPCIONES PARA EJECUTAR A LA IP/HOST/DOMINIO."
+	echo -n "                        <·PULSA [ 1 - 7 ]·>"
+	echo " "
+	read opcion
+	clear
+	case $opcion in
+		1) echo "INSTALANDO PROGRAMA OFFSHELL SYSTEM..."
+		   echo "ACTUALIZANDO SYSTEMA...";
+		sudo apt-get install traceroute && sudo apt-get install curl && sudo apt-get install whois && sudo apt-get install nslookup && sudo apt-get install dig && sudo apt-get install host && sudo apt-get install ipinfo.io ;;
+
+		2) echo "ANALIZANDO PUNTOS DE ACCESO DE INTERNET..."
+		   echo "PROCESANDO CONEXIONES...";
+		sudo traceroute $var1;;
+
+		3) echo "LOCALIZANDO COORDENADAS DE POSICIÓN GLOBAL..."
+		   echo "BUSCANDO DATOS...";
+		sudo curl ipinfo.io/$var1 && sudo nslookup $var1 ;;
+
+		4) echo "ANÁLISIS COMPLETO DE IP..."
+		   echo "SYSTEMA CONECTANDO...";
+		sudo dig $var1 && sudo whois $var1 && sudo host $var1;;
+
+		5) echo "INICIANDO PROCESO DE LECTURA..."
+		   echo "VERIFICANDO CÓDIGO HTML...";
+		curl -u root:toor $var1 ;;
+
+		6) echo "INTRODUCE LA NUEVA DIRECCIÓN IP OBJETIVO:";
+		   read var1;;
+
+		7) echo "CERRANDO PROGRAMA OFFSHELL SYSTEM UNDERGROUND..."
+		   echo "GRACIAS POR VISITAR NUESTRO PROGRAMA.";
+		exit ;;
+
+		*) echo "$opc La tecla pulsada no es correcta... Volviendo..."
+		   echo "  <·Presiona cualquier tecla para continuar·>";
+		   read foo ;;
+esac
+done
+
+
+
+
+
+
+
