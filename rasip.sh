@@ -41,13 +41,14 @@ echo -e "		<<< Presiona cualquier tecla para continuar >>>"
 read foo
 clear
 
-echo -e "\e[1;37m       <<<OFFSHELL SYSTEM UNDERGROUND>>>\e[0m"
-echo -e "\e[1;37m          <<<· RASIP VERSION 1.2 ·>>>\e[0m"
+echo -e "\e[1;37m                   <<<OFFSHELL SYSTEM UNDERGROUND>>>\e[0m"
+echo -e "\e[1;37m                      <<<· RASIP VERSION 1.2 ·>>>\e[0m"
 echo ""
 echo "       -- POR FAVOR, NECESITAMOS QUE ESPECIFIQUES UNA IP|HOST|DOMINIO --"
 echo "                       -- NECESARIA PARA CONTINUAR --"
 echo ""
-echo -e "\e[0;32m 	 --> INTRODUCE LA IP O DOMINIO EN EL SISTEMA: \e[0m"
+echo -e "\e[0;32m 	 --> INTRODUCE LA IP O DOMINIO EN EL SISTEMA: \e[0m" 
+echo -n -e "\e[0;34m ···>>>: \e[0m"
 read var1
 echo "                               >IP GUARDADA"
 echo "                               >ACCEDIENDO AL SYSTEMA"
@@ -113,31 +114,39 @@ do
 		1) echo "INSTALANDO PROGRAMA OFFSHELL SYSTEM..."
 		   echo "ACTUALIZANDO SYSTEMA...";
 		sudo apt-get install traceroute && sudo apt-get install curl && sudo apt-get install whois && sudo apt-get install nslookup && sudo apt-get install dig && sudo apt-get install host && sudo apt-get install ipinfo.io ;
-		sleep 5 ;;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		2) echo "ANALIZANDO PUNTOS DE ACCESO DE INTERNET..."
 		   echo "PROCESANDO CONEXIONES...";
 		sudo traceroute $var1;
-		sleep 5 ;;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		3) echo "LOCALIZANDO COORDENADAS DE POSICIÓN GLOBAL..."
 		   echo "BUSCANDO DATOS...";
 		sudo curl ipinfo.io/$var1 && sudo nslookup $var1 ;
-		sleep 5 ;;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		4) echo "ANÁLISIS COMPLETO DE IP..."
 		   echo "SYSTEMA CONECTANDO...";
 		sudo dig $var1 && sudo whois $var1 && sudo host $var1 ;
-		sleep 5 ;;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		5) echo "INICIANDO PROCESO DE LECTURA..."
 		   echo "VERIFICANDO CÓDIGO HTML...";
 		curl -u root:toor $var1 ;
-		sleep 5 ;;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		6) echo "INTRODUCE LA NUEVA DIRECCIÓN IP OBJETIVO:";
+		   echo -n -e "\e[0;34m ···>>>: \e[0m" ;
 		   read var1 ;
-		   echo "DIRECCIÓN NUEVA AGREGADA..." ;;
+		   echo "DIRECCIÓN NUEVA AGREGADA..." ;
+		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
+           read foo ;;
 
 		7) echo "CERRANDO PROGRAMA OFFSHELL SYSTEM UNDERGROUND..."
 		   echo "GRACIAS POR VISITAR NUESTRO PROGRAMA.";
@@ -148,10 +157,3 @@ do
 		   read foo ;;
 esac
 done
-
-
-
-
-
-
-
