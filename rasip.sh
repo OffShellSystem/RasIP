@@ -42,6 +42,7 @@ read foo
 clear
 
 echo -e "\e[1;37m       <<<OFFSHELL SYSTEM UNDERGROUND>>>\e[0m"
+echo -e "\e[1;37m          <<<· RASIP VERSION 1.2 ·>>>\e[0m"
 echo ""
 echo "       -- POR FAVOR, NECESITAMOS QUE ESPECIFIQUES UNA IP|HOST|DOMINIO --"
 echo "                       -- NECESARIA PARA CONTINUAR --"
@@ -111,27 +112,32 @@ do
 	case $opcion in
 		1) echo "INSTALANDO PROGRAMA OFFSHELL SYSTEM..."
 		   echo "ACTUALIZANDO SYSTEMA...";
-		sudo apt-get install traceroute && sudo apt-get install curl && sudo apt-get install whois && sudo apt-get install nslookup && sudo apt-get install dig && sudo apt-get install host && sudo apt-get install ipinfo.io ;;
-		
+		sudo apt-get install traceroute && sudo apt-get install curl && sudo apt-get install whois && sudo apt-get install nslookup && sudo apt-get install dig && sudo apt-get install host && sudo apt-get install ipinfo.io ;
+		sleep 5 ;;
 
 		2) echo "ANALIZANDO PUNTOS DE ACCESO DE INTERNET..."
 		   echo "PROCESANDO CONEXIONES...";
-		sudo traceroute $var1;;
+		sudo traceroute $var1;
+		sleep 5 ;;
 
 		3) echo "LOCALIZANDO COORDENADAS DE POSICIÓN GLOBAL..."
 		   echo "BUSCANDO DATOS...";
-		sudo curl ipinfo.io/$var1 && sudo nslookup $var1 ;;
+		sudo curl ipinfo.io/$var1 && sudo nslookup $var1 ;
+		sleep 5 ;;
 
 		4) echo "ANÁLISIS COMPLETO DE IP..."
 		   echo "SYSTEMA CONECTANDO...";
-		sudo dig $var1 && sudo whois $var1 && sudo host $var1;;
+		sudo dig $var1 && sudo whois $var1 && sudo host $var1 ;
+		sleep 5 ;;
 
 		5) echo "INICIANDO PROCESO DE LECTURA..."
 		   echo "VERIFICANDO CÓDIGO HTML...";
-		curl -u root:toor $var1 ;;
+		curl -u root:toor $var1 ;
+		sleep 5 ;;
 
 		6) echo "INTRODUCE LA NUEVA DIRECCIÓN IP OBJETIVO:";
-		   read var1;;
+		   read var1 ;
+		   echo "DIRECCIÓN NUEVA AGREGADA..." ;;
 
 		7) echo "CERRANDO PROGRAMA OFFSHELL SYSTEM UNDERGROUND..."
 		   echo "GRACIAS POR VISITAR NUESTRO PROGRAMA.";
