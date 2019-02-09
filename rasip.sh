@@ -113,25 +113,25 @@ do
 	case $opcion in
 		1) echo "INSTALANDO PROGRAMA OFFSHELL SYSTEM..."
 		   echo "ACTUALIZANDO SYSTEMA...";
-		sudo apt-get install traceroute && sudo apt-get install curl && sudo apt-get install whois && sudo apt-get install nslookup && sudo apt-get install dig && sudo apt-get install host && sudo apt-get install ipinfo.io ;
+		apt-get install traceroute && apt-get install curl && apt-get install whois && apt-get install nslookup && apt-get install dig && apt-get install host && apt-get install ipinfo.io ;
 		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
            read foo ;;
 
 		2) echo "ANALIZANDO PUNTOS DE ACCESO DE INTERNET..."
 		   echo "PROCESANDO CONEXIONES...";
-		sudo traceroute $var1;
+		traceroute $var1;
 		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
            read foo ;;
 
 		3) echo "LOCALIZANDO COORDENADAS DE POSICIÓN GLOBAL..."
 		   echo "BUSCANDO DATOS...";
-		sudo curl ipinfo.io/$var1 && sudo nslookup $var1 ;
+		curl ipinfo.io/$var1 && nslookup $var1 ;
 		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
            read foo ;;
 
 		4) echo "ANÁLISIS COMPLETO DE IP..."
 		   echo "SYSTEMA CONECTANDO...";
-		sudo dig $var1 && sudo whois $var1 && sudo host $var1 ;
+		dig $var1 && whois $var1 && host $var1 ;
 		   echo -e "\e[0;34m	<<< Pulse cualquier tecla para acceder al menú del programa >>>\e[0m" ;
            read foo ;;
 
