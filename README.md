@@ -23,4 +23,4 @@ Greetings and thanks for using Software OffShell System.
 
 # OffShell System. Technological soul. Computer passion. Thanks for use our programs.
 # Visit the OffShell System Blog: https://offshellsystem.blogspot.com/
-# Facebook: https://www.facebook.com/offshell.system
+
