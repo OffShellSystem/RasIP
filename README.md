@@ -24,6 +24,8 @@ Un saludo y gracias por utilizar Software OffShell System.
 # Remember that this software is under GPL license.
 Greetings and thanks for using Software OffShell System.
 
+# ShellDredd - OffShell System
+http://www.shelldredd.tk/
 # OffShell System. Technological soul. Computer passion. Thanks for use our programs.
 # Visit the OffShell System Blog: https://offshellsystem.blogspot.com/
 # ¿Que tal un café?
