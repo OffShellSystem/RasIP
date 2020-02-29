@@ -25,7 +25,9 @@ Un saludo y gracias por utilizar Software OffShell System.
 Greetings and thanks for using Software OffShell System.
 
 # ShellDredd - OffShell System
-http://www.shelldredd.tk/
+http://www.shelldredd.tk/  
+# Grupo DIscord para nuestra comunidad.
+![alt text](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fasgardgaming.se%2Fwp-content%2Fuploads%2F2017%2F08%2Fderp-300x240.png&f=1&nofb=1) Entrar -> https://discord.gg/ShKjFfe
 # OffShell System. Technological soul. Computer passion. Thanks for use our programs.
 # Visit the OffShell System Blog: https://offshellsystem.blogspot.com/
 # ¿Que tal un café?
