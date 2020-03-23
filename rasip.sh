@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Software OffShell System.
+# Autor: Alexandre Varela Sixto
 
 clear
 echo "                            <<<···*···>>>                       "
